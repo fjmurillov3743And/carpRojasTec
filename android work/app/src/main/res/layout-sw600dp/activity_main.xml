@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/string_bienvenida"
+        android:textColor="#1DC5C5"/>
+
+    <TextView
+        android:id="@+id/textViewSecundario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintto_toTopOf="@id/textViewSecundario"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrincipal"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrincipal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPrincipal"
+        android:text="Soy Rojas" />
+
+    <Button
+        android:id="@+id/buttonHola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        app:layout_constraintBottom_toTopOf="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewSecundario"
+        app:layout_constraintStart_toStartOf="@id/textViewSecundario"
+        app:layout_constraintEnd_toEndOf="@id/textViewSecundario"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
